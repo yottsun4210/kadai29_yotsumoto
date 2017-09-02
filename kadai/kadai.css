@@ -1,0 +1,18 @@
+.kiminote{
+  text-align: center;
+  background-color: #FFCC00;
+}
+.jyanken{
+  display: flex;
+  justify-content:center;
+}
+.aitenote{
+  text-align: center;
+  background-color: #00FF00;
+}
+
+.resultcss{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}

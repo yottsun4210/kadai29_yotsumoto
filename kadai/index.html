@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="kadai.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="kiminote">君の手</h1>
+  <div class="jyanken">
+  <div id="btn"><img src="グー.png" alt=""></div>
+  <div id="btn2"><img src="チョキ.png" alt=""></div>
+  <div id="btn3"><img src="パー.jpg" alt=""></div>
+</div>
+<h1 class="aitenote">相手の手</h1>
+<div class="jyanken">
+  <div id="teki"><img src="グー.png" alt=""></div>
+  <div id="teki2"><img src="チョキ.png" alt=""></div>
+  <div id="teki3"><img src="パー.jpg" alt=""></div>
+</div>
+  <br>
+  <div id="result" class=resultcss>勝負だ</div>
+  <script>
+  var btn = document.getElementById('btn');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+    var teki = document.getElementById('teki');
+    var teki2 = document.getElementById('teki2');
+    var teki3 = document.getElementById('teki3');
+    var result = document.getElementById('result');
+    var rand = Math.floor(Math.random() * 3)
+
+    btn.addEventListener('click', function() {
+      if (rand == 0) {
+        btn2.innerHTML = '<h1></h1>';
+        btn3.innerHTML = '<h1></h1>';
+        teki2.innerHTML = '<h1></h1>';
+        teki3.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>あいこだよ</h1>';
+      } else if (rand == 1) {
+        btn2.innerHTML = '<h1></h1>';
+        btn3.innerHTML = '<h1></h1>';
+        teki.innerHTML = '<h1></h1>';
+        teki3.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>勝ちだよ</h1>';
+      } else if (rand == 2) {
+        btn2.innerHTML = '<h1></h1>';
+        btn3.innerHTML = '<h1></h1>';
+        teki.innerHTML = '<h1></h1>';
+        teki2.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>負けだよ</h1>';
+      }
+    });
+    btn2.addEventListener('click', function() {
+      if (rand == 0) {
+        btn.innerHTML = '<h1></h1>';
+        btn3.innerHTML = '<h1></h1>';
+        teki2.innerHTML = '<h1></h1>';
+        teki3.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>負けだよ</h1>';
+      } else if (rand == 1) {
+        btn.innerHTML = '<h1></h1>';
+        btn3.innerHTML = '<h1></h1>';
+        teki.innerHTML = '<h1></h1>';
+        teki3.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>あいこだよ</h1>';
+      } else if (rand == 2) {
+        btn.innerHTML = '<h1></h1>';
+        btn3.innerHTML = '<h1></h1>';
+        teki.innerHTML = '<h1></h1>';
+        teki2.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>勝ちだよ</h1>';
+      }
+    });
+    btn3.addEventListener('click', function() {
+      if (rand == 0) {
+        btn.innerHTML = '<h1></h1>';
+        btn2.innerHTML = '<h1></h1>';
+        teki2.innerHTML = '<h1></h1>';
+        teki3.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>勝ちだよ</h1>';
+      } else if (rand == 1) {
+        btn.innerHTML = '<h1></h1>';
+        btn2.innerHTML = '<h1></h1>';
+        teki.innerHTML = '<h1></h1>';
+        teki3.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>負けだよ</h1>';
+      } else if (rand == 2) {
+        btn.innerHTML = '<h1></h1>';
+        btn2.innerHTML = '<h1></h1>';
+        teki.innerHTML = '<h1></h1>';
+        teki2.innerHTML = '<h1></h1>';
+        result.innerHTML = '<h1>あいこだよ</h1>';
+      }
+    });
+    // btn.innerHTML='変更したよ';
+    // var btn2=document.getElementById('btn2');
+    //   btn2.addEventListener('click',function(){
+    //     btn2.innerHTML= '<h1>はじめてのＪＡＶＡスクリプト</h1>'
+    //   })
+    // var btn3=document.getElementById('btn3');
+    //     btn3.addEventListener('click',function(){
+    //       btn3.innerHTML= '<img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Tateshinayama-fuyu.JPG" alt="">'
+    //     })
+
+
+    // console.log("はじめてのjavascript");
+    // console.log(23 + 5);
+    // console.log(2000 - 1800);
+    // console.log("23+5")
+    // console.log(23 * 5)
+    // console.log(23 / 5)
+    // console.log(23 % 5)
+    // var name = "四元正太郎";
+    // console.log(name)
+    // console.log("name")
+    // var point = 80;
+    // if (point == 80) {
+    //   console.log("素晴らしい")
+    // } else {
+    //   console.log("もっと頑張りましょう")
+    // };
+    // var rand = Math.floor(Math.random() * 5);
+    // // console.log(rand);
+    // if (rand == 0) {
+    //   console.log("凄い");
+    // }
+    // if (rand == 1) {
+    //   console.log("凄いね");
+    // }
+    // if (rand == 2) {
+    //   console.log("ふつう");
+    // }
+    // if (rand == 3) {
+    //   console.log("いまいち");
+    // }
+    // if (rand == 4) {
+    //   console.log("残念");
+    // }
+    // var array = ['a', 'b', 'c'];
+    // console.log(array);
+    //
+    // var array2 = ['ぶどう', 'ばなな', 'りんご', 'さくらんぼ', 'めろん', 'おれんじ', ]
+    // console.log(array2);
+    //
+    // array2.push('パイナップル');
+    // console.log(array2);
+    //
+    // // var i=0;
+    // // for(i=0;i<50;i++){
+    // //   console.log(i);
+  </script>
+
+</body>
+
+</html>
